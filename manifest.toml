@@ -55,8 +55,10 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/c0m4r/kula/releases/download/0.15.0/kula-0.15.0-amd64.tar.gz"
-    sha256 = "92a189984672566cc3f31deee22926c25fbbf6370ba361f9b326fe43010b5d60"
+    amd64.url = "https://github.com/c0m4r/kula/releases/download/0.15.0/kula-0.15.0-amd64.tar.gz"
+    amd64.sha256 = "92a189984672566cc3f31deee22926c25fbbf6370ba361f9b326fe43010b5d60"
+    arm64.url = "https://github.com/c0m4r/kula/releases/download/0.15.0/kula-0.15.0-arm64.tar.gz"
+    arm64.sha256 = "4f22ee5247c32564d2cace8f35b98e7476faebbe2fdf85aefe6dc4f9abfb7a2e"
     autoupdate.strategy = "latest_github_release"
 
     [resources.system_user]
