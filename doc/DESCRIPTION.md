@@ -1,0 +1,1 @@
+Kula collecte des métriques système toutes les secondes en les lisant directement dans les répertoires /proc et /sys, les stocke dans un moteur de stockage intégré à tampon circulaire à plusieurs niveaux, et les met à disposition via un tableau de bord Web en temps réel et une interface utilisateur en mode terminal.
