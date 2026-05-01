@@ -173,7 +173,7 @@ applications:
   # The socket_path is auto-detected by default; set it explicitly if using a
   # non-standard location or rootless Podman.
   containers:
-    enabled: true
+    enabled: false
     # socket_path: "/var/run/docker.sock"
     # Filter by container name or ID prefix. Empty = monitor all running containers.
     # containers: ["my-app", "postgres-db"]
