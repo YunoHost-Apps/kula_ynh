@@ -63,8 +63,8 @@ web:
   # When false, only Prometheus metrics and health endpoints remain active.
   ui: true
 
-  listen: "" # use [] brackets for IPv6 addresses, e.g. "[::1]"
-  port: 27960
+  listen: "127.0.0.1" # use [] brackets for IPv6 addresses, e.g. "[::1]"
+  port: __PORT__
 
   # Compress HTTP responses and WebSockets (default: true)
   enable_compression: true
@@ -173,7 +173,7 @@ applications:
   # The socket_path is auto-detected by default; set it explicitly if using a
   # non-standard location or rootless Podman.
   containers:
-    enabled: true
+    enabled: false
     # socket_path: "/var/run/docker.sock"
     # Filter by container name or ID prefix. Empty = monitor all running containers.
     # containers: ["my-app", "postgres-db"]
